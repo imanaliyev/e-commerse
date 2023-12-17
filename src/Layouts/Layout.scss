@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    img{
+      
+    }
+}
+.upper-nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    padding: 10px 200px 10px 645px;
+  
+    
+    .content{
+        color: white;
+        width: 100%;
+        
+        display: flex;
+        align-items: center;justify-content: space-between;
+        font-size: 14px;
+        p:nth-of-type(1){
+            color: rgb(182, 182, 182);
+        }
+        span{
+            margin-left: 20px;
+            text-decoration: underline;
+            color: white;
+        }
+    }
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px 10px 200px;
+   
+    width: 100%;
+    background-color: white;
+   
+    
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        font-weight: bold;
+    }
+    .right-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        gap: 40px;
+        .search{
+            align-items: center;
+            justify-content: center;
+         
+            display: flex;
+            gap: 20px;
+            input{
+                width: 200px;
+                height: 25px;
+                border: none;
+                
+              
+            }
+        }
+    
+        .basket-wishlist{
+            display: flex;
+            gap: 15px;
+        }
+    }
+}
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0px 200px 0px 200px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Exclusive{
+            display: flex;
+            flex-direction: column;
+     
+            justify-content: center;
+            gap: 30px;
+            li:nth-of-type(1){
+                font-size: 25px;
+            }
+        }
+        .Support{
+            display: flex;
+            flex-direction: column;
+     
+            justify-content: center;
+            gap: 30px;
+            li:nth-of-type(1){
+                font-size: 25px;
+            }
+
+        }
+        .Account{
+            display: flex;
+            flex-direction: column;
+     
+            justify-content: center;
+            gap: 30px;
+            li:nth-of-type(1){
+                font-size: 25px;
+            }
+        }
+        .FAQ{
+            display: flex;
+            flex-direction: column;
+     
+            justify-content: center;
+            gap: 30px;
+            li:nth-of-type(1){
+                font-size: 25px;
+            }
+        }
+        .qr{
+            display: flex;
+            flex-direction: column;
+            .salam{
+                font-size: 22px;
+
+            }
+            .photo{
+                display: flex;
+             
+                align-items: center;
+                justify-content: center;
+                .img1{
+                    height: 100px;
+                }
+           
+                    display: flex;
+        
+                   
+                 
+                   
+                    .img2{
+                        height:100px    ;
+                      
+                       
+
+                    }
+                    .img3{
+                        height: 100px;
+                    }
+           
+
+            }
+   
+        
+        }
+        
+
+    }
+}

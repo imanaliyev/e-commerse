@@ -1,0 +1,237 @@
+.card {
+    display: flex !important;
+    align-items: start;
+    justify-self: start;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid rgba(128, 128, 128, 0.466);
+
+
+
+
+
+    .card-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        &:hover>.hover {
+            padding: 10px 0px 10px 0px;
+            height: 40px;
+        }
+
+        .thumbnail {
+            height: 200px;
+        }
+
+        .fa-heart {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 18px;
+            opacity: 0.5;
+            transition: 200ms;
+
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .fa-eye {
+            position: absolute;
+            top: 40px;
+            right: 14px;
+            font-size: 18px;
+            opacity: 0.5;
+            transition: 200ms;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .hover {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.699);
+            color: white;
+            text-align: center;
+            transition: 200ms;
+            position: absolute;
+            bottom: 0;
+            cursor: pointer;
+
+            height: 0px;
+            overflow: hidden;
+
+            &:hover {
+                background-color: black;
+            }
+
+
+        }
+
+    }
+
+    .price {
+        display: flex;
+        width: 100%;
+
+        gap: 30px;
+
+        .new-price {
+            color: red;
+            font-weight: bold;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: grey;
+            font-weight: bold;
+
+        }
+
+
+    }
+
+    .discount {
+        width: 50px;
+        height: 20px;
+        background-color: red;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .review {
+        i:nth-of-type(1) {
+
+            color: #FFAD33;
+        }
+
+        i:nth-of-type(2) {
+            color: #FFAD33;
+        }
+
+        i:nth-of-type(3) {
+            color: #FFAD33;
+        }
+
+        i:nth-of-type(4) {
+            color: #FFAD33;
+        }
+
+
+    }
+
+}
+
+#jbl {
+    
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+ 
+    
+
+  .container{
+    height: 800px;
+    padding: 0px 50px 0px 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .image {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+
+       
+        img {
+           
+            box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+           
+                border-radius: 100%;
+                
+           
+            
+           
+
+
+            height: 800px;
+        }
+    }
+
+    .content {
+        
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+
+        .p1 {
+            color: #0F6;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        h1{
+            font-size: 56px;
+            color: white;
+        }
+        .circules{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px   ;
+            .circule{
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                flex-direction: column;
+               span{
+                font-weight: bold;
+                font-size: 20px;
+               }
+               
+
+            }
+
+        }
+        .buy-now{
+            width: 180px;
+            height: 60px;
+            background-color: #0F6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+
+           }
+
+
+    }
+  }
+}
