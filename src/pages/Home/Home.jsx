@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "../Home/home.scss"
 import { Carousel } from 'react-carousel-minimal';
 import MyCarusel from '../../components/Carusel';
+import { BasketContext } from '../../Context/BasketContext';
 
 
 
@@ -24,6 +25,7 @@ function Home() {
 
 
     ];
+    const {basket,addBasket} = useContext(BasketContext)
 
     const [products, setProducts] = useState([])
     useEffect(() => {
@@ -222,7 +224,7 @@ function Home() {
                                 <img src={x.image} alt="" />
                                 <i class="fa-solid fa-heart"></i>
                                 <i class="fa-regular fa-eye"></i>
-                                <div className="hover">
+                                <div onClick={()=>addBasket(x)} className="hover">
                                     Add To Cart
 
                                 </div>
@@ -327,7 +329,7 @@ function Home() {
                                 <img src={x.image} alt="" />
                                 <i class="fa-solid fa-heart"></i>
                                 <i class="fa-regular fa-eye"></i>
-                                <div className="hover">
+                                <div onClick={()=>addBasket(x)} className="hover">
                                     Add To Cart
 
                                 </div>
@@ -426,7 +428,7 @@ function Home() {
             <section id='info'>
 
                 <div className="contanier">
-                    <div className="card">
+                    <div className="card-info">
                         <div className="logo">
                         <i class="fa-solid fa-truck"></i>
 
@@ -435,7 +437,7 @@ function Home() {
                         <p>Free delivery for all orders over $140</p>
 
                     </div>
-                    <div className="card">
+                    <div className="card-info">
                         <div className="logo">
                         <i class="fa-solid fa-headset"></i>
 
@@ -444,7 +446,7 @@ function Home() {
                         <p>Friendly 24/7 customer support</p>
 
                     </div>
-                    <div className="card">
+                    <div className="card-info">
                         <div className="logo">
                         <i class="fa-solid fa-shield-halved"></i>
 
