@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { BasketContext } from '../Context/BasketContext'
 
 function Navbar() {
+    const {basket} = useContext(BasketContext)
   return (
     <>
     <header>
@@ -21,7 +23,7 @@ function Navbar() {
             <ul>
                 <Link to={"/"}><li>Home</li></Link>
                 <Link to={'/contact'}><li>Contact</li></Link>
-                <li>About</li>
+                <Link to={"/about"}><li>About</li></Link>
                 <li>Sign Up</li>
             </ul>
             <div className="right-nav">
@@ -31,7 +33,7 @@ function Navbar() {
                 </div>
                 <div className="basket-wishlist">
                 <i class="fa-regular fa-heart"></i> 
-                <Link to={"/cart"}><i class="fa-solid fa-cart-shopping"></i></Link>
+                <Link to={"/cart"}><i class="fa-solid fa-cart-shopping"></i>{basket.length}</Link>
                 
                 </div>
             </div>

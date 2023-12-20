@@ -3,6 +3,7 @@ import "../Home/home.scss"
 import { Carousel } from 'react-carousel-minimal';
 import MyCarusel from '../../components/Carusel';
 import { BasketContext } from '../../Context/BasketContext';
+import { Link } from 'react-router-dom';
 
 
 
@@ -223,7 +224,7 @@ function Home() {
                             <div className="top">
                                 <img src={x.image} alt="" />
                                 <i class="fa-solid fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
+                                <Link to={`/detail/${x.id}`}><i class="fa-regular fa-eye"></i></Link>
                                 <div onClick={()=>addBasket(x)} className="hover">
                                     Add To Cart
 
@@ -328,7 +329,7 @@ function Home() {
                             <div className="top">
                                 <img src={x.image} alt="" />
                                 <i class="fa-solid fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
+                                <Link to={`/detail/${x.id}`}><i class="fa-regular fa-eye"></i></Link>
                                 <div onClick={()=>addBasket(x)} className="hover">
                                     Add To Cart
 

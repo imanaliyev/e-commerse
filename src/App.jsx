@@ -4,6 +4,9 @@ import Home from "./pages/Home/Home";
 import MainLayout from "./Layouts/MainLayout";
 import Contact from "./pages/Contact/Contact";
 import Basket from "./pages/Basket/Basket";
+import About from "./pages/About/About";
+import NotFound from "./pages/NotFound/NotFound";
+import Detail from "./pages/Detail/Detail";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <Route path="/" element={<Home/>} /> 
       <Route path="/contact" element={<Contact/>} /> 
       <Route path="/cart" element={<Basket/>} /> 
+      <Route path="/about" element={<About/>} /> 
+      <Route path="*" element={<NotFound/>} /> 
+      <Route path="/detail/:id" element={<Detail/>} /> 
       </Route>
     
     </Routes>

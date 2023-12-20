@@ -102,7 +102,7 @@
         flex-direction: column;
 
         .today {
-            color: red;
+            color: #db4444;
             display: flex;
             gap: 10px;
             align-items: center;
@@ -114,7 +114,7 @@
             div {
                 width: 20px;
                 height: 40px;
-                background-color: red;
+                background-color: #db4444;
             }
 
         }
@@ -178,7 +178,7 @@
     .view-all {
         width: 220px;
         height: 50px;
-        background-color: red;
+        background-color: #db4444;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -209,7 +209,7 @@
             flex-direction: column;
 
             .today {
-                color: red;
+                color: #db4444;
                 display: flex;
                 gap: 10px;
                 align-items: center;
@@ -221,7 +221,7 @@
                 div {
                     width: 20px;
                     height: 40px;
-                    background-color: red;
+                    background-color: #db4444;
                 }
 
             }
@@ -267,7 +267,7 @@
             transition: 200ms;
 
             &:hover {
-                background-color: red;
+                background-color: #db4444;
                 color: white;
             }
 
@@ -305,7 +305,7 @@
             flex-direction: column;
 
             .today {
-                color: red;
+                color: #db4444;
                 display: flex;
                 gap: 10px;
                 align-items: center;
@@ -317,7 +317,7 @@
                 div {
                     width: 20px;
                     height: 40px;
-                    background-color: red;
+                    background-color: #db4444;
                 }
 
             }
@@ -335,7 +335,7 @@
         .right {
             width: 120px;
             height: 50px;
-            background-color: red;
+            background-color: #db4444;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -461,7 +461,7 @@
             flex-direction: column;
 
             .today {
-                color: red;
+                color: #db4444;
                 display: flex;
                 gap: 10px;
                 align-items: center;
@@ -473,7 +473,7 @@
                 div {
                     width: 20px;
                     height: 40px;
-                    background-color: red;
+                    background-color: #db4444;
                 }
 
             }
@@ -594,7 +594,7 @@
         margin-top: 80px;
         width: 180px;
         height: 50px;
-        background-color: red;
+        background-color: #db4444;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -621,7 +621,7 @@
             flex-direction: column;
 
             .today {
-                color: red;
+                color: #db4444;
                 display: flex;
                 gap: 10px;
                 align-items: center;
@@ -633,7 +633,7 @@
                 div {
                     width: 20px;
                     height: 40px;
-                    background-color: red;
+                    background-color: #db4444;
                 }
 
             }
@@ -816,6 +816,7 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
+            
             .logo{
                 width: 70px;
                 height: 70px;

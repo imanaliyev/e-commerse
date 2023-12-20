@@ -9,7 +9,7 @@ function BasketProvider({children}) {
     
    
     const [basket, setBasket] = useLocalStorage("basket" ,[])
-    const [totalPrice, setTotalPrice] = useState(0);
+    const [totalPrice, setTotalPrice] = useLocalStorage("salam" ,0);
 console.log(totalPrice);
     const addBasket =(item)=>{
         let index = basket.findIndex(x=> x.id === item.id)
@@ -47,13 +47,14 @@ console.log(totalPrice);
     const decrease=(item)=>{
       let index = basket.findIndex(x=> x.id === item.id)
      
-      
-
       if (basket[index].count>0) {
         basket[index].count--
         setTotalPrice(Number((totalPrice - item.price).toFixed(2)));
         
       }
+     
+
+      
     
       setBasket([...basket])
     }

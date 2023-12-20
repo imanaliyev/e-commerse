@@ -1,0 +1,32 @@
+#not-found{
+    padding: 0px 200px 0px 200px;
+    .salam{
+        margin-top: 50px;
+    }
+    .err{
+        height: 600px   ;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            font-size: 80px;
+            margin-bottom: 30px;
+        }
+        p{
+            margin-bottom: 50px;
+        }
+        button{
+            width: 180px;
+            height: 50px;
+            background-color: #db4444;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+       
+    }
+
+}

@@ -4,12 +4,14 @@ import { BasketContext } from '../../Context/BasketContext'
 import { Link } from 'react-router-dom'
 function Basket() {
 
-    const {basket,increase,decrease,totalPrice} = useContext(BasketContext)
+    const {basket,increase,decrease,totalPrice,removeBasket} = useContext(BasketContext)
+
+  
     
   return (
     <>
     <section id='basket'>
-        <p>Home / <b>Cart</b></p>
+        <Link to={"/"}><p className='navigate'>Home / <b>Cart</b></p></Link>
     
 
         <div className="basket">
@@ -25,6 +27,9 @@ function Basket() {
             {basket.map(x=>(
                 <ul className='basket-item' key={x.id}>
                     <div className='basket-photo'>
+                        <div className="remove" onClick={()=>removeBasket(x)}>
+                        <i class="fa-solid fa-xmark"></i>
+                        </div>
                         <img src={x.image} alt="" />
                         {x.name}
                     </div>
