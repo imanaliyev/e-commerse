@@ -7,6 +7,7 @@ import Basket from "./pages/Basket/Basket";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import Detail from "./pages/Detail/Detail";
+import "./assets/responsive.scss"
 
 function App() {
   return (

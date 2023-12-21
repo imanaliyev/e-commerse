@@ -4,6 +4,9 @@ import { BasketContext } from '../Context/BasketContext'
 
 function Navbar() {
     const {basket} = useContext(BasketContext)
+    const openMenu=()=>{
+        document.querySelector(".menu-nav").classList.toggle("open")
+    }
   return (
     <>
     <header>
@@ -39,6 +42,28 @@ function Navbar() {
             </div>
 
         </nav>
+        <div className="nav2">
+            <h1>Exclusive</h1>
+            <div className="nav2-right">    
+            <div className="menu">
+                <button onClick={openMenu}>Menu <i class="fa-solid fa-bars-staggered"></i></button>
+                <ul className='menu-nav'>
+                <Link to={"/"}><li>Home</li></Link>
+                <Link to={'/contact'}><li>Contact</li></Link>
+                <Link to={"/about"}><li>About</li></Link>
+                <li>Sign Up</li>
+                </ul>
+                
+            </div>
+            <div className="icons">
+            <Link to={"/cart"}><i class="fa-solid fa-cart-shopping"></i>{basket.length}</Link>
+            <i class="fa-solid fa-heart"></i>
+            </div>
+           </div>
+          
+            
+
+        </div>
 
 
     </header>

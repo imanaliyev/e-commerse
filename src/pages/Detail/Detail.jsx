@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./detail.scss";
+
 import { Link, useParams } from "react-router-dom";
 function Detail() {
   let { id } = useParams();
